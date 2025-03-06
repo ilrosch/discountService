@@ -34,7 +34,7 @@
 ## Пример использования
 
 ```javascript
-import { DiscountService } from "./discounts/DiscountService";
+import { DiscountService } from "./src/DiscountService";
 
 // Создаем экземпляр сервиса
 const service = new DiscountService();
@@ -59,6 +59,7 @@ console.log(history); // [{ originalPrice: 1000, discountedPrice: 800 }]
 service.clearHistory();
 console.log(service.getDiscountHistory()); // []
 ```
+
 ### Объяснение:
 - В примере показано, как создать экземпляр `DiscountService`.
 - Установлена простая стратегия скидок, которая применяет 20% скидку.
